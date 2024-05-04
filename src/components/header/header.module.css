@@ -1,0 +1,95 @@
+.header_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header_name {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.header_job_title {
+    font-size: 1.6rem;
+}
+.buttons_container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.contact_button, .lang_button {
+    color: #f2f2f3;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    padding: 6px 20px;
+    font-family: Alef, sans-serif;
+    transition: text-shadow 0.2s ease;
+    cursor: pointer;
+}
+.lang_button {
+    padding: 0;
+}
+.contact_button:hover, .lang_button:hover {
+    text-shadow: 0 0 7px #f2f2f3;
+}
+.contact_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts_container {
+    list-style-type: none;
+    width: 25rem;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    background-color: #f2f2f3;
+    border-radius: 5px;
+    padding: 20px;
+}
+.header_telephone, .header_email, .header_cv, .header_linkedin {
+    margin: 0 7px;
+    text-decoration: none;
+    color: #131316;
+    font-size: 1.3rem;
+}
+.header_telephone_container, .header_email_container, .header_cv_container, .header_linkedin_container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.header_cv_container {
+    padding-bottom: 0;
+}
+@media (max-width: 768px) {
+    .contacts_container {
+        width: 20rem;
+    }
+    .header_name {
+        font-size: 1.8rem;
+    }
+    .header_job_title {
+        font-size: 1.1rem;
+    }
+    .contact_button, .lang_button {
+        font-size: 1rem;
+    }
+    .header_telephone, .header_email, .header_cv, .header_linkedin {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 500px) {
+    .header_name {
+        font-size: 1.4rem;
+    }
+    .header_job_title {
+        font-size: 0.9rem;
+    }
+    .contact_button, .lang_button {
+        font-size: 1rem;
+    }
+}
+
