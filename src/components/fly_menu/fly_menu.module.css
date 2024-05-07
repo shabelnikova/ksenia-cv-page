@@ -1,0 +1,21 @@
+.header_telephone, .header_email, .header_cv, .header_linkedin {
+    margin: 0 7px;
+    text-decoration: none;
+    /*color: #131316;*/
+    color: #f2f2f3;
+    font-size: 1.3rem;
+}
+.header_telephone_container, .header_email_container, .header_cv_container, .header_linkedin_container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.header_cv_container {
+    padding-bottom: 0;
+}
+@media (max-width: 768px) {
+    .header_telephone, .header_email, .header_cv, .header_linkedin {
+        font-size: 1.1rem;
+    }
+}

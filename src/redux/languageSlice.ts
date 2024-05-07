@@ -2,7 +2,6 @@ import {createSlice} from "@reduxjs/toolkit";
 import {getLangFromStorage, setLangInStorage} from "../utils/common";
 
 const lang = getLangFromStorage();
-type Language = "En" | "He"
 interface IState {
     language: string;
 }

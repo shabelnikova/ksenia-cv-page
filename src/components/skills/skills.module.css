@@ -1,0 +1,26 @@
+.skills_wrapper {
+    padding-top: 15px;
+}
+.skills_header {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.skills_container {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    gap: 20px;
+    justify-content: space-between;
+}
+.icon_wrapper {
+    width: 40px;
+    height: 40px;
+}
+.skill_item {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
