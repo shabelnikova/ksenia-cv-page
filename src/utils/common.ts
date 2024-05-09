@@ -11,19 +11,52 @@ import {
 } from "react-icons/si";
 import {FaBootstrap, FaCss3Alt, FaFigma, FaGithub, FaHtml5, FaJava, FaJira, FaNodeJs, FaReact} from "react-icons/fa";
 import {BsFiletypeScss} from "react-icons/bs";
-import {ISkillIcon} from "./types";
+import {ISkillIcon, ISkillItem} from "./types";
 
 const LANGUAGE = 'language';
 export const getLangFromStorage = () => localStorage.getItem(LANGUAGE);
 
 export const setLangInStorage = (lang: string) => localStorage.setItem(LANGUAGE, lang);
 
-export const languages = ['En', 'He']
+export const languages = ['English', 'Hebrew']
 
+export const skills2: ISkillItem[] = [
+    {
+        area: "Programming languages",
+        skills: ["JavaScript", "TypeScript", "Node.js", "Java"]
+    },
+    {
+        area: "Web",
+        skills: ["React", "Redux", "React Router", "React Hook Form", "Yup", "i18next", "Context API", "SCSS/SASS", "CSS Modules",
+            "BEM", "Adaptive Layout", "FlexBox", "Grid", "Bootstrap", "Figma"]
+    },
+    {
+        area: "Technologies and frameworks",
+        skills: ["OOP", "Multithreading", "Spring", "SpringBoot", "Spring Data JPA", "Maven", "Lombok", "Jackson",
+            "JSON"]
+    },
+    {
+        area: "Testing and API development",
+        skills: ["Rest API", "WebSocket", "Postman", "Swagger", "Jest", "Cypress"]
+    },
+    {
+        area: "Databases",
+        skills: ["Postgresql", "MongoDb"]
+    },
+    {
+        area: "IDE/Tools",
+        skills: ["WebStorm", "VSCode", "Eclipse", "Jira", "Slack", "Git", "GitHub", "Firebase"]
+    },
+    {
+        area: "OS",
+        skills: ["Mac OS", "Windows"]
+    }
+
+]
 export const skills: ISkillIcon[] = [
     {
         name: "JavaScript",
-        color: "yellow",
+        color: "rgba(255, 213, 0, .5)",
         icon: SiJavascript
     },
     {
@@ -121,4 +154,24 @@ export const skills: ISkillIcon[] = [
         color: "gold",
         icon: SiFirebase
     },
-]
+];
+const stellarTools = ['Typescript', 'JavaScript', 'React', 'Redux ToolKit', 'WebSocket', 'Jest', 'Cypress', 'GitHub'];
+export const stellarProject = {
+    header: "Stellar Burger",
+    tools: stellarTools
+};
+const tennisTools = ['Typescript', 'JavaScript', 'React', 'Redux ToolKit', "React Hook Form", "Yup", "Adaptive Layout", "Firebase", "i18next", 'GitHub'];
+export const tennisProject = {
+    header: "Tennis League",
+    tools: tennisTools,
+}
+const shopTools = ['Typescript', 'JavaScript', 'React', 'Redux ToolKit', "React Hook Form", "Adaptive Layout", "Postman", "Clean Architecture", 'GitHub'];
+export const shopProject = {
+    header: "Furniture Shop 3legant",
+    tools: shopTools,
+}
+const promoTools = ['Typescript', 'JavaScript', 'React', "i18next", "Adaptive Layout", 'GitHub']
+export const promoProject = {
+    header: "Personal Web Site",
+    tools: promoTools,
+}

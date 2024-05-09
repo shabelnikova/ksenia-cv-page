@@ -1,10 +1,37 @@
 .skills_wrapper {
-    padding-top: 15px;
+    padding-top: 30px;
 }
 .skills_header {
     font-weight: 700;
     font-size: 2rem;
 }
+.skills_cards_container {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, 280px);*/
+    /*gap: 20px;*/
+    /*justify-content: space-between;*/
+}
+.card_header {
+    font-size: 1.5rem;
+}
+.card_skills_container {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    gap: 10px;
+}
+.skill_card_item {
+    border: 1px solid #f2f2f3;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
 .skills_container {
     padding-top: 15px;
     display: grid;

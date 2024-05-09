@@ -5,3 +5,7 @@ export interface ISkillIcon {
     color: string
     icon: IconType
 }
+export interface ISkillItem {
+    area: string,
+    skills: string[]
+}

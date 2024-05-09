@@ -2,14 +2,14 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import {getLangFromStorage} from "./utils/common";
-const lang = getLangFromStorage() || 'En';
+const lang = getLangFromStorage() || 'English';
 
 const resources = {
-    En: {
-        translation: require('./locales/en/translation.json'),
+    English: {
+        translation: require('./locales/english/translation.json'),
     },
-    He: {
-        translation: require('./locales/he/translation.json'),
+    Hebrew: {
+        translation: require('./locales/hebrew/translation.json'),
     },
 };
 i18n.use(initReactI18next).init({

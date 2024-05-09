@@ -1,0 +1,12 @@
+.footer_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer_line {
+    width: 100%;
+    border-top: 1px solid #f2f2f3;
+}
+.footer_info {
+    padding-top: 30px;
+    color: #f2f2f3;
+}

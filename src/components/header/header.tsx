@@ -12,7 +12,7 @@ const HeaderNew = () => {
     const dispatch = useAppDispatch();
     const {language} = useAppSelector(state => state.language);
 
-    const [lang, setLang] = useState(language === 'En' ? 'He' : 'En')
+    const [lang, setLang] = useState(language === 'English' ? 'Hebrew' : 'English')
     const {t, i18n} = useTranslation();
 
     const [isActive, setIsActive] = useState(false);
@@ -31,10 +31,10 @@ const HeaderNew = () => {
         setIsActive(prevState => !prevState);
     }
     const flymenuStyles = () => {
-        if(isActive && language === 'En') {
+        if(isActive && language === 'English') {
             return `${styles.contacts_container} ${styles.active}`
         }
-        else if(isActive && language === 'He') {
+        else if(isActive && language === 'Hebrew') {
             return `${styles.contacts_container} ${styles.contacts_container_hebrew} ${styles.active}`
         }
         return `${styles.contacts_container}`
@@ -49,13 +49,10 @@ const HeaderNew = () => {
                <button ref={menuButtonRef} onClick={toggleMenu} type={'button'} className={styles.contact_button}>{t("contacts")}</button>
                <button onClick={() => toggleLanguage(lang)} className={styles.lang_button}>{lang}</button>
            </div>
-
-                <ul className={flymenuStyles()}
-                    ref={contactsRef}>
-                    <FlyMenu/>
-                </ul>
-
-
+            <ul className={flymenuStyles()}
+                ref={contactsRef}>
+                <FlyMenu/>
+            </ul>
         </div>
     );
 };
