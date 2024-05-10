@@ -37,7 +37,10 @@ const HeaderNew = () => {
         else if(isActive && language === 'Hebrew') {
             return `${styles.contacts_container} ${styles.contacts_container_hebrew} ${styles.active}`
         }
-        return `${styles.contacts_container}`
+        else if(!isActive && language === 'English')
+            return `${styles.contacts_container}`
+        else
+            return `${styles.contacts_container} ${styles.contacts_container_hebrew}`
     }
     return (
         <div className={styles.header_container}>
