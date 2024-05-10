@@ -16,7 +16,7 @@ const Recommendations = () => {
                     </a>
                     <div className={styles.recommendations_description}>
                         <p className={styles.name}>Vitalii Kravchuk</p>
-                        <p>Mobile/Frontend developer - Android, React, React Native, Flutter</p>
+                        <p>Mobile/Frontend Developer &#8212; Android, React, React Native, Flutter</p>
                         <p>{t("testimonial2")}</p>
                     </div>
                 </div>
