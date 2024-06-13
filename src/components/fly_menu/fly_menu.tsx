@@ -33,7 +33,7 @@ const FlyMenu = () => {
                 <IconContext.Provider value={{color: "white", size: '1.2rem'}}>
                     <LuFileDown/>
                 </IconContext.Provider>
-                <a className={styles.header_cv} href={"CV_Ksenia_Shabelnikov_FrontEnd_Fullstack_Developer.pdf"} download={"CV_Ksenia_Shabelnikov_FrontEnd_Fullstack_Developer.pdf"}>{t("cv")}</a>
+                <a className={styles.header_cv} href={"CV_Ksenia_Shabelnikov_Full-Stack_Developer.pdf"} download={"CV_Ksenia_Shabelnikov_Full-Stack_Developer.pdf"}>{t("cv")}</a>
             </li>
         </>
     );

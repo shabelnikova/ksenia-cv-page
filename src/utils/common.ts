@@ -27,12 +27,12 @@ export const skills2: ISkillItem[] = [
     },
     {
         area: "Web",
-        skills: ["React", "Redux", "React Router", "React Hook Form", "Yup", "i18next", "Context API", "SCSS/SASS", "CSS Modules",
-            "BEM", "Adaptive Layout", "FlexBox", "Grid", "Bootstrap", "Figma"]
+        skills: ["React", "Redux", "Context API", "SCSS/SASS", "CSS Modules",
+            "BEM", "Adaptive Layout", "Tailwind CSS", "Bootstrap", "Figma"]
     },
     {
         area: "Technologies and frameworks",
-        skills: ["OOP", "Multithreading", "Spring", "SpringBoot", "Spring Data JPA", "Maven", "Lombok", "Jackson",
+        skills: ["Next.js", "Express.js", "OOP", "Multithreading", "Spring", "SpringBoot", "Spring Data JPA", "Maven", "Lombok", "Jackson",
             "JSON"]
     },
     {
@@ -45,7 +45,7 @@ export const skills2: ISkillItem[] = [
     },
     {
         area: "IDE/Tools",
-        skills: ["WebStorm", "VSCode", "Eclipse", "Jira", "Slack", "Git", "GitHub", "Firebase"]
+        skills: ["WebStorm", "VSCode", "Eclipse", "Jira", "Git", "Firebase"]
     },
     {
         area: "OS",

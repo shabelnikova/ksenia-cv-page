@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './skills.module.css';
-import {IconContext} from "react-icons";
 import {useTranslation} from "react-i18next";
-import i18n from "i18next";
-import {skills, skills2} from "../../utils/common";
+import {skills2} from "../../utils/common";
 
 
 const Skills = () => {
